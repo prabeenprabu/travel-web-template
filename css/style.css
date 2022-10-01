@@ -1,5 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    animation: all 0.38s ease;
+    text-decoration: none;
+}
+
+:root {
+    --color-blue: #29d9d5;
+    --color-black: #111;
+    --color-light-grey: #aaa;
+    --color-bg-color: #252525;
+    --color-white: #fff;
+    --black-bg: rgba(17, 17, 17, 0.7);
+    --border: 0.2rem solid var(--color-blue);
+}
+
+html {
+    font-size: 67.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 9rem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-black);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-blue);
+}
+
+body {
+    background: var(--color-black);
+    overflow-x: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: var(--color-blue);
+    border: var(--border);
+    background: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.btn:hover {
+    background-color: var(--color-blue);
+    color: var(--color-bg-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--color-bg-color);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 1.5rem 9%;
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--color-white);
+}
+.logo i {
+    color: var(--color-blue);
+    padding-right: 0.5rem;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--color-light-grey);
+    display: inline-block;
+    margin: 0 1rem;
+}
+.navbar a:hover {
+    color: var(--color-blue);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+/* ---------------------media qurie------------------- */
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-bg-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar a {
+        margin: 2rem;
+        display: block;
+        font-size: 2rem;
+    }
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* for mobile */
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
 }
