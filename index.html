@@ -16,6 +16,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <!-- --fonts awesome links -->
 
         <link
@@ -32,12 +36,6 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <script>
-            AOS.init({
-                duration: 800,
-                offset: 150,
-            });
-        </script>
     </head>
     <body>
         <!-- ----------------------header section starts--------------------------- -->
@@ -92,15 +90,17 @@
         <!-- ----------------------home section starts--------------------------- -->
         <section class="home" id="home">
             <div class="content">
-                <span data-aos="fade-up">follow us</span>
-                <h3 data-aos="fade-up">to the unknown</h3>
-                <p data-aos="fade-up">
+                <span data-aos="fade-up" data-aos-delay="150">follow us</span>
+                <h3 data-aos="fade-up" data-aos-delay="300">to the unknown</h3>
+                <p data-aos="fade-up" data-aos-delay="450">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Odio debitis vero reprehenderit ea soluta ullam minima enim
                     perferendis saepe laudantium ad accusantium porro quibusdam
                     asperiores, optio, reiciendis culpa eligendi! Qui.
                 </p>
-                <a data-aos="fade-up" href="#" class="btn">book now</a>
+                <a data-aos="fade-up" data-aos-delay="600" href="#" class="btn"
+                    >book now</a
+                >
             </div>
         </section>
         <!-- ----------------------home section ends--------------------------- -->
@@ -108,15 +108,15 @@
         <!-- ----------------------book-form section starts--------------------------- -->
         <section class="book-form" id="book-form">
             <form action="">
-                <div class="inputBox">
+                <div data-aos="fade-up" class="inputBox">
                     <span>where to?</span>
                     <input type="text" name="" placeholder="place name" id="" />
                 </div>
-                <div class="inputBox">
+                <div data-aos="fade-up" class="inputBox">
                     <span>when?</span>
                     <input type="date" name="" id="" />
                 </div>
-                <div class="inputBox">
+                <div data-aos="fade-up" class="inputBox">
                     <span>how many?</span>
                     <input
                         type="number"
@@ -125,7 +125,12 @@
                         id=""
                     />
                 </div>
-                <input type="submit" value="find now" class="btn" />
+                <input
+                    data-aos="fade-up"
+                    type="submit"
+                    value="find now"
+                    class="btn"
+                />
             </form>
         </section>
         <!-- ----------------------book-form section ends--------------------------- -->
@@ -133,14 +138,14 @@
 
         <section class="about" id="about">
             <div class="content">
-                <span>why choose us?</span>
-                <h3>Nature's majesty awaits you</h3>
-                <p>
+                <span data-aos="fade-up">why choose us?</span>
+                <h3 data-aos="fade-up">Nature's majesty awaits you</h3>
+                <p data-aos="fade-up">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Porro libero consequuntur aliquam praesentium sapiente
                     doloribus. Quo, nam porro.
                 </p>
-                <a href="#" class="btn">read more</a>
+                <a data-aos="fade-up" href="#" class="btn">read more</a>
             </div>
         </section>
 
@@ -148,126 +153,126 @@
         <!-- ----------------------destination section starts--------------------------- -->
         <section class="destination" id="destination">
             <div class="heading">
-                <span>our destination</span>
-                <h1>make you destination</h1>
+                <span data-aos="fade-up">our destination</span>
+                <h1 data-aos="fade-up">make you destination</h1>
             </div>
             <div class="box-container">
-                <div class="box">
+                <div data-aos="zoom-in" class="box">
                     <div class="image">
                         <img src="images/boat.jpg" alt="" />
                     </div>
                     <div class="content">
-                        <h3>tours & travel</h3>
-                        <p>
+                        <h3 data-aos="fade-up">tours & travel</h3>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Molestias, alias!
                         </p>
-                        <a href="#" class="btn"
+                        <a href="#" class="btn" data-aos="fade-up"
                             >read more <i class="fas fa-angle-right"></i
                         ></a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="zoom-in" class="box">
                     <div class="image">
                         <img src="images/city.jpg" alt="" />
                     </div>
                     <div class="content">
-                        <h3>tours & travel</h3>
-                        <p>
+                        <h3 data-aos="fade-up">tours & travel</h3>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Molestias, alias!
                         </p>
-                        <a href="#" class="btn"
+                        <a href="#" class="btn" data-aos="fade-up"
                             >read more <i class="fas fa-angle-right"></i
                         ></a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="zoom-in" class="box">
                     <div class="image">
                         <img src="images/green-land.jpg" alt="" />
                     </div>
                     <div class="content">
-                        <h3>tours & travel</h3>
-                        <p>
+                        <h3 data-aos="fade-up">tours & travel</h3>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Molestias, alias!
                         </p>
-                        <a href="#" class="btn"
+                        <a href="#" class="btn" data-aos="fade-up"
                             >read more <i class="fas fa-angle-right"></i
                         ></a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="zoom-in" class="box">
                     <div class="image">
                         <img src="images/mumbai-gate.jpg" alt="" />
                     </div>
                     <div class="content">
-                        <h3>tours & travel</h3>
-                        <p>
+                        <h3 data-aos="fade-up">tours & travel</h3>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Molestias, alias!
                         </p>
-                        <a href="#" class="btn"
+                        <a href="#" class="btn" data-aos="fade-up"
                             >read more <i class="fas fa-angle-right"></i
                         ></a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="zoom-in" class="box">
                     <div class="image">
                         <img src="images/place.jpg" alt="" />
                     </div>
                     <div class="content">
-                        <h3>tours & travel</h3>
-                        <p>
+                        <h3 data-aos="fade-up">tours & travel</h3>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Molestias, alias!
                         </p>
-                        <a href="#" class="btn"
+                        <a href="#" class="btn" data-aos="fade-up"
                             >read more <i class="fas fa-angle-right"></i
                         ></a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="zoom-in" class="box">
                     <div class="image">
                         <img src="images/taj-mahal.jpg" alt="" />
                     </div>
                     <div class="content">
-                        <h3>tours & travel</h3>
-                        <p>
+                        <h3 data-aos="fade-up">tours & travel</h3>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Molestias, alias!
                         </p>
-                        <a href="#" class="btn"
+                        <a href="#" class="btn" data-aos="fade-up"
                             >read more <i class="fas fa-angle-right"></i
                         ></a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="zoom-in" class="box">
                     <div class="image">
                         <img src="images/tower.jpg" alt="" />
                     </div>
                     <div class="content">
-                        <h3>tours & travel</h3>
-                        <p>
+                        <h3 data-aos="fade-up">tours & travel</h3>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Molestias, alias!
                         </p>
-                        <a href="#" class="btn"
+                        <a href="#" class="btn" data-aos="fade-up"
                             >read more <i class="fas fa-angle-right"></i
                         ></a>
                     </div>
                 </div>
-                <div class="box">
+                <div data-aos="zoom-in" class="box">
                     <div class="image">
                         <img src="images/way.jpg" alt="" />
                     </div>
                     <div class="content">
-                        <h3>tours & travel</h3>
-                        <p>
+                        <h3 data-aos="fade-up">tours & travel</h3>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Molestias, alias!
                         </p>
-                        <a href="#" class="btn"
+                        <a href="#" class="btn" data-aos="fade-up"
                             >read more <i class="fas fa-angle-right"></i
                         ></a>
                     </div>
@@ -284,7 +289,7 @@
             </div>
             <div class="box-container">
                 <div class="box">
-                    <i class="fa-solid fa-globe"></i>
+                    <i class="fas fa-globe"></i>
                     <h3>worldwide</h3>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -317,7 +322,7 @@
                     </p>
                 </div>
                 <div class="box">
-                    <i class="fa-solid fa-hotel"></i>
+                    <i class="fas fa-hotel"></i>
                     <h3>affordable</h3>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -627,5 +632,19 @@
 
         <!-- ------script tag--------------- -->
         <script src="js/main.js"></script>
+
+        <!-- <script>
+            AOS.init({
+                duration: 800,
+                offset: 150,
+            });
+        </script> -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                offset: 150,
+            });
+        </script>
     </body>
 </html>
